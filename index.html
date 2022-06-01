@@ -9,6 +9,51 @@
 </head>
 <body>
 	
+	<div class="zip">
+		<div class="zip-card">
+
+			<div id="zip-form" class="zip-form">
+				<span class="zip-form-title">
+					Zip Lookup
+				</span>
+
+				<div class="wrap-zip" data-validate = "Zip is required">
+					<input id="zip-input" class="zip-input" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="5" name="Zip" placeholder="Zip">
+					<span class="shadow-zip"></span>
+					<span id="zip-input-error" class="zip-input-error"></span>
+				</div>
+
+				<div class="zip-card-form-btn">
+					<button id="zip-form-btn" onclick="getZipDetails()" class="zip-form-btn">
+						<span>
+							Get Zipcode Information
+						</span>
+					</button>
+				</div>
+			</div>
+
+			<div id="zip-info" class="zip-info">
+				<div id="zip-title">ZIPCODE LOCATION DETAILS</div>
+				<div id="zipcode">Zipcode: <span id="zipcode-value"></span></div>
+				<div id="country">Country: <span id="country-value"></span> (<span id="countryAbbr-value"></span>)</div>
+				
+				<div class="wrapper">
+  
+					<div id="table" class="table">
+					  
+					  	
+					  
+					  
+					  
+					</div>
+				</div>
+				<!-- end table -->
+
+			</div>
+		</div>
+	</div>
+
+
 	<script src="script.js"></script>
 </body>
 </html>
